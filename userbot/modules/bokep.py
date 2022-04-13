@@ -17,7 +17,7 @@ async def _(event):
         asupannya = [
             asupan
             async for asupan in event.client.iter_messages(
-                "@F444444444444444", filter=InputMessagesFilterVideo
+                "@Bokeppypy", filter=InputMessagesFilterVideo
             )
         ]
         aing = await event.client.get_me()
@@ -35,8 +35,9 @@ async def _(event):
 CMD_HELP.update(
     {
         "asupan": f"**Plugin : **`bokep`\
-        \n\n  •  **Syntax :** `{cmd}Bokep`\
-        \n  •  **Function : **Untuk Mengirim video Bokep untuk kamu yang sangean.\
+        \n\n  •  **Syntax :** `{cmd}bokep`\
+        \n  •  **Function : **Untuk Mengirim video bokep untuk kamu yang sange.\
     "
     }
 )
+
