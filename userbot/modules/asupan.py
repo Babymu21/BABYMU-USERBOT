@@ -57,7 +57,7 @@ CMD_HELP.update(
         "asupan": f"**Plugin : **`asupan`\
         \n\n  •  **Syntax :** `{cmd}asupan`\
         \n  •  **Function : **Untuk Mengirim video asupan secara random.\
-         n\n •  **Syntax :** `{cmd}bokep`\
+         n •  **Syntax :** `{cmd}bokep`\
         \n  •  **Function : **Untuk Mengirim video bokep secara kamu sange mendadak.\
     "
     }
