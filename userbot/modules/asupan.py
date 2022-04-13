@@ -30,13 +30,35 @@ async def _(event):
     except Exception:
         await event.edit("Tidak bisa menemukan video asupan.")
 
+
+@poci_cmd(pattern="bokep$")
+async def _(event):
+    try:
+        asupannya = [
+            asupan
+            async for asupan in event.client.iter_messages(
+                "@Bokeppypy", filter=InputMessagesFilterVideo
+            )
+        ]
+        aing = await event.client.get_me()
+        await event.client.send_file(
+            event.chat_id,
+            file=random.choice(asupannya),
+            caption=f"**Berhasil menemukan Bokep jangan sange kontol**.")
         
+        await event.delete()
+    except Exception:
+        await event.edit("Tidak bisa menemukan video asupan.")
+
+               
 
 CMD_HELP.update(
     {
         "asupan": f"**Plugin : **`asupan`\
         \n\n  •  **Syntax :** `{cmd}asupan`\
         \n  •  **Function : **Untuk Mengirim video asupan secara random.\
+         n\n •  **Syntax :** `{cmd}bokep`\
+        \n  •  **Function : **Untuk Mengirim video bokep secara kamu sange mendadak.\
     "
     }
 )
