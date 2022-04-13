@@ -34,7 +34,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "asupan": f"**Plugin : **`bokep`\
+        "bokep": f"**Plugin : **`bokep`\
         \n\n  •  **Syntax :** `{cmd}bokep`\
         \n  •  **Function : **Untuk Mengirim video bokep untuk kamu yang sange.\
     "
